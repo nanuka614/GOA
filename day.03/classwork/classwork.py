@@ -1,8 +1,8 @@
-age = input("Enter your age: ")
+age = int(input("Enter your age: "))
 print("your age is", age)
 
 color = input("Favorite color: ")
-number = input("Favorite number: ")
+number = int(input("Favorite number: "))
 animal = input("Favorite animal: ")
 
 print("You like the color", color)
