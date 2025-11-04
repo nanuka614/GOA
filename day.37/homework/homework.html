@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block vs Inline</title>
+<style>
+  /* 4) 3 span ელემენტი, თითოეული განსხვავებული ფერი და სიმაღლე */
+.span1 {
+    display: block; /* უბრალოდ ასე გამოჩნდება ქვემოთ ერთმანეთისგან */
+    background-color: #ff6b6b;
+    height: 30px;
+}
+
+.span2 {
+    display: block;
+    background-color: #1dd1a1;
+    height: 40px;
+}
+
+.span3 {
+    display: block;
+    background-color: #54a0ff;
+    height: 50px;
+}
+
+  /* 5) 4 p ელემენტი, თითოეულს განსხვავებული ფონი */
+p {
+    display: inline; /* inline ელემენტი, ისინი ერთ ხაზზე არიან */
+    background-color: #feca57;
+    margin-right: 10px;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- 1) display:block -->
+<!-- Block ელემენტი ყოველთვის იწყება ახალ ხაზზე და ფართოვდება მთელი ხელმისაწვდომი სიგანით -->
+
+<!-- 2) display:inline -->
+<!-- Inline ელემენტი არ იწყება ახალ ხაზზე, მისი სიგანე მხოლოდ შიგთავსით განისაზღვრება -->
+
+<!-- 4) 3 span ელემენტი -->
+<span class="span1"></span>
+<span class="span2"></span>
+<span class="span3"></span>
+
+<!-- 5) 4 p ელემენტი -->
+<p>პარაგრაფი 1</p>
+<p>პარაგრაფი 2</p>
+<p>პარაგრაფი 3</p>
+<p>პარაგრაფი 4</p>
+
+</body>
+</html>

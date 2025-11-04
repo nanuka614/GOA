@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+
+        .translate {
+            transform: translateX(200px); /* გადაადგილება x ღერძზე 200px */
+            background-color: #ff6f61;
+        }
+
+
+        .rotate {
+            transform: rotate(-50deg); /* გადაატრიალე 50 გრადუსით მარცხნივ */
+            background-color: #6f42c1;
+        }
+
+        .scale {
+            transform: scale(10); /* გაზარდა ზომა 10 ჯერ */
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Translate X 200px</h2>
+    <div class="box translate">Translate</div>
+
+    <h2>Rotate -50°</h2>
+    <div class="box rotate">Rotate</div>
+
+    <h2> Scale 10x</h2>
+    <div class="box scale">Scale</div>
+
+</body>
+</html>

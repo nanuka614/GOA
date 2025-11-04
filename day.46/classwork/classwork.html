@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Crop & Scroll Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+
+        .crop-container {
+            width: 300px;     
+            height: 200px;   
+            overflow: hidden;   /* ზედმეტი ნაწილი დამალულია */
+            border: 2px solid #333;
+            margin-bottom: 40px;
+        }
+
+        .crop-container img {
+            width: 100%;        /* ფოტო მოერგება კონტეინერს */
+            height: auto;    
+        }
+
+
+        .scroll-container {
+            width: 300px;
+            height: 150px;
+            overflow: auto;     /* scroll ბარები გამოჩნდება ზედმეტ ნაწილზე */
+            border: 2px solid #333;
+            padding: 10px;
+        }
+
+        .scroll-content {
+            width: 500px;       /* უფრო დიდი სიგანე, ვიდრე container */
+            height: 300px;      /* უფრო მაღალი, ვიდრე container */
+            background-color: #a5d6ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Image Crop Example</h2>
+    <div class="crop-container">
+        <img src="img.png" alt="Large Photo">
+    </div>
+
+    <h2> Scrollbar Overflow Example</h2>
+    <div class="scroll-container">
+        <div class="scroll-content">
+            ეს არის დიდი დივი, რომელიც გადადის კონტეინერის საზღვრებს. Scroll ბარები გაჩნდება ზედმეტი ნაწილი სანახავად.
+        </div>
+    </div>
+
+</body>
+</html>

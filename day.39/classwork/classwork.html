@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Margin, Padding, Inline & Block</title>
+    <style>
+        /* 
+        1) Margin და Padding ახსნა:
+        margin: გარე სივრცე ელემენტის გარშემო (ელემენტებს ერთმანეთისგან აშორებს)
+        paddng: შიდა სივრცე ელემენტის შიგნით (ტექსტი აღარ შეეხება ელემენტის საზღვარს)*/
+        .box {
+            background-color: lightblue;
+            padding: 20px; 
+            margin: 20px; 
+        }
+
+        /*
+        2) display: inline ახსნა:
+        ელემენტი გამოჩნდება ხაზში (სანაპიროზე გვერდიგვერდ სხვა ელემენტებთან)
+        არ შეუძლია width და height კონტროლი ჩვეულებრივად*/
+        .inline-example {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* 
+        3) display: block ახსნა:
+        ელემენტი გადის ახალ ხაზზე და იკავებს მთელი სიგანის
+        width და height სრულად კონტროლადი*/
+        .block-example {
+            display: block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">ეს არის Box პარაგრაფით (padding და margin გამოყენებულია)</div>
+
+
+    <span class="inline-example">Inline 1</span>
+    <span class="inline-example">Inline 2</span>
+    <span class="inline-example">Inline 3</span>
+
+
+    <div class="block-example">Block 1</div>
+    <div class="block-example">Block 2</div>
+    <div class="block-example">Block 3</div>
+
+</body>
+</html>

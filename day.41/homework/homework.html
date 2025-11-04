@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position Example</title>
+    <style>
+        /*
+        1) Position-ის ტიპების ახსნა:
+        static: ეს არის ელემენტის ნორმალური დეფოლტური მდგომარეობა. ელემენტები დგებიან ჩვეულებრივ ნაკადში, ერთმანეთს მიყოლებით.
+        relative: ელემენტი დგება ჩვეულებრივ ნაკადში, მაგრამ შეგვიძლია ვაკონტროლოთ მისი მოძრაობა (top, left, bottom, right) მის "ნატურალურ" ადგილზე.
+        absolute: ელემენტი ამოიღება ჩვეულებრივი ნაკადიდან და განლაგდება ყველაზე ახლოს მდგომ relative ან body კონტეინერის მიხედვით. */
+
+        /*
+        2) განსხვავება relative-სა და absolute-ს შორის:
+        relative: ელემენტი ჯერ ნორმალურად დგება ნაკადში, შემდეგ გადაადგილდება.
+        absolute: ელემენტი მთლიანად გამოდის ნაკადიდან, არ ზღუდავს სხვა ელემენტებს. */
+
+
+        .static-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px 0;
+        }
+        .static-box1 { background-color: lightblue; }
+        .static-box2 { background-color: lightgreen; }
+        .static-box3 { background-color: lightcoral; }
+
+
+        .relative-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px 0;
+        }
+        .relative-box1 { background-color: lightblue; }
+        .relative-box2 { 
+            background-color: lightgreen; 
+            position: relative;   /* ახლა ეს ელემენტი შეიძლება გადაადგილდეს */
+            top: 20px;          
+            left: 30px;         
+        }
+        .relative-box3 { background-color: lightcoral; }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            background-color: lightgray;
+            position: relative; /* კონტეინერი უნდა იყოს relative, რომ absolute შიგნით მასზე მიეთითოს */
+            margin: 20px 0;
+        }
+
+        .absolute-box {
+            width: 50px;
+            height: 50px;
+            background-color: darkblue;
+            position: absolute; 
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3) სამი static div ჩვეულებრივად -->
+    <div class="static-box static-box1">Static 1</div>
+    <div class="static-box static-box2">Static 2</div>
+    <div class="static-box static-box3">Static 3</div>
+
+    <hr>
+
+    <!-- 4) მეორე div relative -->
+    <div class="relative-box relative-box1">Box 1</div>
+    <div class="relative-box relative-box2">Box 2</div>
+    <div class="relative-box relative-box3">Box 3</div>
+
+    <hr>
+
+    <!-- 5) კონტეინერი relative, პატარა box absolute -->
+    <div class="container">
+        <div class="absolute-box"></div>
+    </div>
+</body>
+</html>

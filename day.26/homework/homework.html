@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+</head>
+<body>
+    <!--name – ატრიბუტი, რომელიც განსაზღვრავს რომელი ველის მონაცემს მიიღებს სერვერი ფორმის გაგზავნისას.
+value – ატრიბუტი, რომელიც განსაზღვრავს რა მნიშვნელობას იღებს ეს ელემენტი, როცა მომხმარებელი აირჩევს კონკრეტულ ვარიანტს-->
+
+    <h1>აირჩიე ინფორმაცია</h1>
+
+    <form action="#" method="post">
+        <!-- Country -->
+        <label for="country">აირჩიე ქვეყანა:</label><br>
+        <select name="country" id="country">
+            <option value="georgia">საქართველო</option>
+            <option value="usa">აშშ</option>
+            <option value="france">ფრანგეთი</option>
+            <option value="germany">გერმანია</option>
+        </select><br><br>
+
+        <!-- Course -->
+        <label for="course">აირჩიე სასწავლო კურსი:</label><br>
+        <select name="course" id="course">
+            <option value="math101">მათემატიკა 101</option>
+            <option value="phy101">ფიზიკა 101</option>
+            <option value="cs101">კომპ. მეცნიერება 101</option>
+        </select><br><br>
+
+        <!-- Sport -->
+        <label for="sport">აირჩიე საყვარელი სპორტი:</label><br>
+        <select name="sport" id="sport">
+            <option value="football">ფეხბურთი</option>
+            <option value="basketball">ბასკეტბოლი</option>
+            <option value="tennis">ტენისი</option>
+            <option value="swimming">წამოსვა</option>
+        </select><br><br>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+</body>
+</html>

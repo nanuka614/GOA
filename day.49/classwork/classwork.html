@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Cards & Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /*Interactive Cards Section  */
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            width: 250px;
+            height: 350px;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Hover effects */
+        .card:hover {
+            transform: translateY(-10px) rotate(3deg) skew(5deg, 2deg) scale(1.05);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Image Gallery Section */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-card {
+            width: 200px;
+            height: 250px;
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+
+        .gallery-text {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        /* Hover effects for gallery cards */
+        .gallery-card:hover {
+            transform: translateY(-10px) rotate(-2deg) scale(1.05);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+
+        .gallery-card:hover .gallery-text {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>ინტერაქტიული ბარათები</h1>
+
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://picsum.photos/id/1011/400/300" alt="Card 1">
+            <div class="card-content">
+                <h3>კარდი 1</h3>
+                <p>ეს არის კარდის აღწერა. Hover-ზე იძენს ეფექტებს.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/1025/400/300" alt="Card 2">
+            <div class="card-content">
+                <h3>კარდი 2</h3>
+                <p>ეს არის კარდის აღწერა. Hover-ზე იძენს ეფექტებს.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/1037/400/300" alt="Card 3">
+            <div class="card-content">
+                <h3>კარდი 3</h3>
+                <p>ეს არის კარდის აღწერა. Hover-ზე იძენს ეფექტებს.</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>სურათების გალერეა</h1>
+
+    <div class="gallery-container">
+        <div class="gallery-card">
+            <img src="img1.png" alt="Gallery 1">
+            <div class="gallery-text">სურათი 1</div>
+        </div>
+        <div class="gallery-card">
+            <img src="img2.png" alt="Gallery 2">
+            <div class="gallery-text">სურათი 2</div>
+        </div>
+        <div class="gallery-card">
+            <img src="img3.png" alt="Gallery 3">
+            <div class="gallery-text">სურათი 3</div>
+        </div>
+        <div class="gallery-card">
+            <img src="img4.png" alt="Gallery 4">
+            <div class="gallery-text">სურათი 4</div>
+        </div>
+    </div>
+
+</body>
+</html>

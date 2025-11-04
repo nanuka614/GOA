@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* 1) Transform – CSS თვისება, რომელიც საშუალებას აძლევს ელემენტს გადაადგილდეს, გაამრავლოს, გადატრიალდეს, დახაროს */
+        /* 2) Transform-ის მნიშვნელობები, რაც ვისწავლეთ: */
+        /* translate(x, y) - გადაადგილება X და Y ღერძებზე */
+        /* translateX(value) - მხოლოდ X ღერძზე გადაადგილება */
+        /* translateY(value) - მხოლოდ Y ღერძზე გადაადგილება */
+        /* rotate(angle) - ელემენტის ატრიალება */
+
+
+        .translateXY {
+            transform: translate(100px, 200px); /* გადაადგილება X=100px, Y=200px */
+            background-color: #ff6f61;
+        }
+
+
+        .translateX {
+            transform: translateX(400px); /* გადაადგილება მხოლოდ X ღერძზე 400px */
+            background-color: #6f42c1;
+        }
+
+
+        .scale {
+            transform: scale(4); /* გაზრდა 4 ჯერ */
+            background-color: #28a745;
+        }
+
+
+        .rotateCCW {
+            transform: rotate(-50deg); /* საათის ისრის საწინააღმდეგო მიმართულებით 50° */
+            background-color: #f0ad4e;
+        }
+
+
+        .rotateCW {
+            transform: rotate(100deg); /* საათის ისრის მიმართულებით 100° */
+            background-color: #17a2b8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2> Translate X=100px, Y=200px</h2>
+    <div class="box translateXY">TranslateXY</div>
+
+    <h2> Translate X=400px</h2>
+    <div class="box translateX">TranslateX</div>
+
+    <h2> Scale 4x</h2>
+    <div class="box scale">Scale</div>
+
+    <h2> Rotate CCW 50°</h2>
+    <div class="box rotateCCW">Rotate CCW</div>
+
+    <h2> Rotate CW 100°</h2>
+    <div class="box rotateCW">Rotate CW</div>
+
+</body>
+</html>

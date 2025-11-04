@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .horizontal-center {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: #54a0ff;
+        }
+
+
+        .vertical-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            gap: 20px;
+            background-color: #f1f2f6;
+        }
+
+
+        .special-layout {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+            background-color: #dff9fb;
+            padding: 20px 0;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: #576574;
+            color: white;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+
+        .button-panel {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .button-panel button {
+            width: 120px;
+            height: 50px;
+            background-color: #1dd1a1;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button-panel button:hover {
+            background-color: #10ac84;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2> 3 ბლოკი ჰორიზონტალურად ცენტრში</h2>
+    <div class="horizontal-center">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+    <h2> 3 ბლოკი ვერტიკალურად ცენტრში</h2>
+    <div class="vertical-center">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+    <h2> 5 ბლოკი: პირველი ზემოთ, ბოლო ქვემოთ, დანარჩენი ცენტრში</h2>
+    <div class="special-layout">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+
+    <h2> Header (ლოგო მარცხნივ, მენიუ ცენტრში, search მარჯვნივ)</h2>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#" style="color:white; text-decoration:none;">Home</a>
+            <a href="#" style="color:white; text-decoration:none;">About</a>
+            <a href="#" style="color:white; text-decoration:none;">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search">
+    </header>
+
+    <h2> ღილაკების პანელი</h2>
+    <div class="button-panel">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+    </div>
+
+</body>
+
+</html>

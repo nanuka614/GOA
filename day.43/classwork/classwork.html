@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Position Example</title>
+    <style>
+        .static-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px 0;
+        }
+        .static-box1 { background-color: lightblue; }
+        .static-box2 { background-color: lightgreen; }
+        .static-box3 { background-color: lightcoral; }
+
+
+        .relative-box1 { background-color: lightblue; width:100px; height:100px; margin:10px 0; }
+        .relative-box2 { 
+            background-color: lightgreen; 
+            width:100px; 
+            height:100px; 
+            position: relative; 
+            top: 20px;          /* გადაადგილდება ქვემოთ 20px */
+            left: 30px;         /* გადაადგილდება მარჯვნივ 30px */
+            margin: 10px 0;
+        }
+        .relative-box3 { background-color: lightcoral; width:100px; height:100px; margin:10px 0; }
+
+
+        .absolute-box1 { background-color: lightblue; width:100px; height:100px; margin:10px 0; }
+        .absolute-box2 { 
+            background-color: lightgreen; 
+            width:100px; 
+            height:100px; 
+            position: absolute; 
+            top: 0;             /* ეკრანის ზედა ნაწილი */
+            left: 0;            /* ეკრანის მარცხენა ნაწილი */
+        }
+        .absolute-box3 { background-color: lightcoral; width:100px; height:100px; margin:10px 0; }
+    </style>
+</head>
+<body>
+
+
+    <div class="static-box static-box1">Static 1</div>
+    <div class="static-box static-box2">Static 2</div>
+    <div class="static-box static-box3">Static 3</div>
+
+
+    <hr>
+
+    <!-- 2) Relative divs -->
+    <div class="relative-box1">Box 1</div>
+    <div class="relative-box2">Box 2</div>
+    <div class="relative-box3">Box 3</div>
+    <!-- მეორე box (Box 2) გადაადგილებულია 20px ქვემოთ და 30px მარჯვნივ,
+    მაგრამ თავის ნორმალურ ადგილზე რჩება, ამიტომ დანარჩენი ელემენტები თავის ადგილას დგანან -->
+
+    <hr>
+
+
+    <div class="absolute-box1">Box 1</div>
+    <div class="absolute-box2">Box 2</div>
+    <div class="absolute-box3">Box 3</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model & Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styled div demonstrating Box Model */
+        .box {
+            background-color: lightblue;
+            color: darkblue;
+            padding: 20px;
+            border: 5px solid blue;
+            margin: 30px auto;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px gray;
+        }
+
+        /* Title */
+        h1 {
+            color: red;
+        }
+
+        /* Paragraph */
+        p {
+            color: gray;
+            font-size: 18px;
+        }
+
+        /* Button */
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">გამარჯობა, მე ვარ Box Model</div>
+
+    <h1>ეს არის ჩემი სათაური</h1>
+    <p>ეს არის მარტივი ტექსტი, სადაც ვსწავლობ CSS სტილებს.</p>
+    <button>დამაწკაპე</button>
+
+    <!-- 
+BOX MODEL ახსნა:
+HTML-ის თითოეული ელემენტი შეგვიძლია წარმოვიდგინოთ, როგორც "ყუთი" (Box).
+Box შედგება 4 ნაწილისგან:
+Content — ელემენტის შიგთავსი (ტექსტი, სურათი და ა.შ.)
+Padding — შიდა სივრცე content-ისა და ჩარჩოს (border) შორის
+Border — ჩარჩო, რომელიც გარს აკრავს ელემენტს
+Margin — გარე სივრცე, რომელიც ელემენტსა და სხვა ელემენტებს აშორებს
+Box Model გამოიყენება ელემენტების ზომის, დაშორებისა და განლაგების სამართავად.
+-->
+</body>
+</html>

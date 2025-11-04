@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Body-ის სტილი */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Main section */
+        section {
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Image style */
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+INLINE CSS:
+გამოიყენება უშუალოდ HTML თეგში "style" ატრიბუტით.
+მაგალითად: <p style="color:red;">Hello</p>
+
+
+INTERNAL CSS:
+-იწერება <style> ტეგში HTML ფაილის <head> ნაწილში.
+-მაგალითად:
+<style>
+p { color: blue; }
+</style>
+
+EXTERNAL CSS:
+-სტილი ინახება ცალკე .css ფაილში, რომელიც უკავშირდება HTML ფაილს <link> ტეგით.
+მაგალითად: <link rel="stylesheet" href="style.css">-->
+
+<header>
+        <h1>ჩემი პატარა ვებსაიტი</h1>
+    </header>
+
+    <nav>
+        <a href="#">მთავარი</a>
+        <a href="#">ჩვენს შესახებ</a>
+        <a href="#">კონტაქტი</a>
+    </nav>
+
+    <section>
+        <h2>მოგესალმებით!</h2>
+        <p>ეს არის პატარა საიტი, სადაც ნაჩვენებია internal CSS-ის გამოყენება.
+        აქ გამოყენებულია ყველა ძირითადი ატრიბუტი — ფერები, ზომები, საზღვრები და სხვ.</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" alt="Nature">
+    </section>
+
+    <footer>
+        <p>ავტორი: ბატონი ნიკოლოზ ბიძინაშვილი | © 2025</p>
+    </footer>
+
+</body>
+</html>

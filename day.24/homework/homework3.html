@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გასეირნებაზე განაცხადი</title>
+</head>
+<body>
+    <h1>გასეირნებაზე განაცხადი</h1>
+    <form action="#" method="post">
+        <!-- სახელი და გვარი -->
+        <label for="fullname">სახელი და გვარი:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <!-- კლასის ველი -->
+        <label for="grade">რომელ კლასში ხარ?</label><br>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <!-- გინდა წასვლა? (radio) -->
+        <label>გინდა წასვლა?</label><br>
+        <input type="radio" id="yes" name="going" value="კი" required>
+        <label for="yes">კი</label><br>
+        <input type="radio" id="no" name="going" value="არა">
+        <label for="no">არა</label><br><br>
+
+        <!-- გინდა წამოიღო საჭმელი? (checkbox) -->
+        <input type="checkbox" id="food" name="food" value="yes">
+        <label for="food">გინდა წამოიღო საჭმელი?</label><br><br>
+
+        <!-- მშობლის ტელეფონი -->
+        <label for="parentPhone">მშობლის ტელეფონის ნომერი:</label><br>
+        <input type="tel" id="parentPhone" name="parentPhone" required><br><br>
+
+        <!-- ღილაკი -->
+        <button type="submit">დადასტურება</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ყველა პარაგრაფისთვის საერთო სტილი */
+        p {
+            color: darkblue;
+            font-size: 16px;
+        }
+
+        /* id-ის გამოყენებით კონკრეტული პარაგრაფის შეცვლა */
+        #special {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* class-ის გამოყენებით სხვა პარაგრაფის შეცვლა */
+        .highlight {
+            color: green;
+            font-size: 18px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+1) Inline CSS:
+პირდაპირ HTML ელემენტში წერია style ატრიბუტით.
+გამოიყენება მარტივი, სწრაფი ცვლილებებისთვის.
+ცუდია დიდი საიტებისთვის, რადგან ართულებს კოდის მართვას.
+-->
+
+<!-- 
+2) Internal CSS:
+დაწერილია <style> ტეგში HTML-ის <head> ნაწილში.
+გამოიყენება ერთი HTML ფაილისთვის სტილის განსაზღვრებისთვის.
+მარტივია და ყველა ელემენტზე მოქმედებს გვერდზე.
+-->
+
+<!-- 
+3) External CSS:
+დაწერილია ცალკეულ .css ფაილში.
+HTML-ში ემაგრება <link> ტეგით.
+საუკეთესო პრაქტიკაა დიდი საიტებისთვის: კოდი გასაგებია, მარტივად განახლებადია.
+-->
+
+
+<h1 style="color: red; font-size: 30px; background-color: yellow;">სათაური 1</h1>
+<h2 style="color: blue; font-size: 25px; background-color: lightgray;">სათაური 2</h2>
+<h3 style="color: green; font-size: 20px; background-color: pink;">სათაური 3</h3>
+<p style="color: purple; font-size: 18px; background-color: beige;">ეს არის ერთი პარაგრაფი, რომელსაც აქვს თავისი სტილი.</p>
+
+
+<p>ეს პარაგრაფი ყველასთვის ერთნაირად არის სტილირებული.</p>
+<p id="special">ეს პარაგრაფი id-ის გამოყენებით არის გამორჩეული.</p>
+<p class="highlight">ეს პარაგრაფი class-ის გამოყენებით არის გამორჩეული.</p>
+</body>
+</html>

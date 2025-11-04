@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            margin-bottom: 30px;
+            border: 2px solid #333;
+            padding: 10px;
+        }
+
+        /* visible - კონტენტის გასვლა მშობლის საზღვრებიდან ნებადართულია */
+        .visible1 {
+            overflow: visible;
+            background-color: #f9c2ff;
+        }
+        .visible2 {
+            overflow: visible;
+            background-color: #ffd6a5;
+        }
+
+
+        /* hidden - კონტენტი, რომელიც გადაცდება საზღვარს დამალულია */
+        .hidden1 {
+            overflow: hidden;
+            background-color: #a5ffd6;
+        }
+        .hidden2 {
+            overflow: hidden;
+            background-color: #c2f0ff;
+        }
+
+
+        /* scroll - ყოველთვის გამოჩნდება scroll ბარები */
+        .scroll1 {
+            overflow: scroll;
+            background-color: #fff3a5;
+        }
+        .scroll2 {
+            overflow: scroll;
+            background-color: #ffa5a5;
+        }
+
+
+        /* auto - scroll ბარები მხოლოდ საჭიროების შემთხვევაში */
+        .auto1 {
+            overflow: auto;
+            background-color: #d6a5ff;
+        }
+        .auto2 {
+            overflow: auto;
+            background-color: #a5ffd6;
+        }
+
+        /* overflow-x - ჰორიზონტალური scroll */
+        /* overflow-y - ვერტიკალური scroll */
+        .overflowxy1 {
+            width: 200px;
+            height: 100px;
+            overflow-x: scroll; /* ჰორიზონტალური scroll */
+            background-color: #f0a5ff;
+        }
+        .overflowxy2 {
+            width: 200px;
+            height: 100px;
+            overflow-y: scroll; /* ვერტიკალური scroll */
+            background-color: #a5f0ff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Overflow: visible</h2>
+    <div class="box visible1">
+        This is visible content that overflows the box. Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box visible2">
+        Another visible example overflowing the box. Lorem ipsum dolor sit amet, consectetur.
+    </div>
+
+    <h2>Overflow: hidden</h2>
+    <div class="box hidden1">
+        This content will be hidden if it exceeds the box boundaries. Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box hidden2">
+        Hidden content example. Extra text that will not be shown.
+    </div>
+
+    <h2>Overflow: scroll</h2>
+    <div class="box scroll1">
+        Always scrollbars visible. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+    <div class="box scroll2">
+        Scroll example with extra text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <h2>Overflow: auto</h2>
+    <div class="box auto1">
+        Scrollbar appears only if needed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+    <div class="box auto2">
+        Auto example with enough content to require scrollbars.
+    </div>
+
+    <h2>Overflow-x and Overflow-y</h2>
+    <div class="box overflowxy1">
+        Horizontal overflow example: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Extra text to show horizontal scroll.
+    </div>
+    <div class="box overflowxy2">
+        Vertical overflow example:<br>
+        Line 1<br>Line 2<br>Line 3<br>Line 4<br>Line 5<br>Line 6<br>
+    </div>
+
+</body>
+</html>

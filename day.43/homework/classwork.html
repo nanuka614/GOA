@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Example</title>
+    <style>
+        /* 
+        1) Grouping selectors ახსნა:
+        ეს საშუალებას გვაძლევს ერთდროულად რამდენიმე selector-ზე მივანიჭოთ ერთი სტილი.
+        სინტაქსი: selector1, selector2, selector3 { property: value; }*/
+
+        /* 
+        2) Grouping selectors სინტაქსი მაგალითი:
+        h1, h2, h3 {
+        color: blue;
+        }
+        ეს ყველა სათაურისთვის ერთნაირ ფერს გააკეთებს. */
+
+        /*
+        3) Font properties:
+        font-family: განსაზღვრავს ტექსტის ფონტს
+        font-size: განსაზღვრავს ტექსტის ზომას
+        font-weight: განსაზღვრავს ტექსტის სისქეს (normal, bold, ან ციფრული 100-900)
+        font-style: განსაზღვრავს ტექსტის სტილს (normal, italic, oblique)*/
+
+
+        p.one {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        p.two {
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+        }
+
+        p.three {
+            font-family: Georgia, serif;
+            font-size: 20px;
+        }
+
+
+        h1, h2 {
+            font-size: 32px; /* ორივეს ერთნაირი ზომა */
+        }
+
+        h1 {
+            font-weight: 700; /* bold */
+        }
+
+        h2 {
+            font-style: italic;
+            font-weight: 400; /* normal */
+        }
+
+        /* 6) position: fixed ახსნა
+        fixed ელემენტი რჩება ერთ ადგილზე ეკრანზე, არ მოძრაობს scroll-ის დროს*/
+
+        /* 7) fixed-ის თვისებები
+        top, right, bottom, left: ადგენს კონკრეტულ პოზიციას viewport-ზე
+        scroll-ზე არ იძვრის*/
+        .fixed-box {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ეს არის h1 სათაური</h1>
+    <h2>ეს არის h2 სათაური</h2>
+
+    <p class="one">ეს არის პირველი პარაგრაფი Arial ფონტით, ზომა 16px</p>
+    <p class="two">ეს არის მეორე პარაგრაფი Courier New ფონტით, ზომა 18px</p>
+    <p class="three">ეს არის მესამე პარაგრაფი Georgia ფონტით, ზომა 20px</p>
+
+    <div class="fixed-box">Fixed Box</div>
+
+</body>
+</html>
