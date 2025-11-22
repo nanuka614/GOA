@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 2</title>
+
+    <style>
+        /*
+z-index განსაზღვრავს ელემენტის ფენის რიგს.
+მუშაობს მხოლოდ position: relative/absolute/fixed/sticky.
+მაღალი z-index = ელემენტი ზემოთ დგას.
+*/
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .blue {
+            background: blue;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .red {
+            background: red;
+            top: 40px;
+            left: 40px;
+            z-index: 2;
+        }
+
+        .imgs img {
+            width: 150px;
+            position: absolute;
+        }
+
+        .i1 {
+            left: 20px;
+            top: 140px;
+            z-index: 1;
+        }
+
+        .i2 {
+            left: 40px;
+            top: 160px;
+            z-index: 2;
+        }
+
+        .i3 {
+            left: 60px;
+            top: 180px;
+            z-index: 3;
+        }
+        /*
+Linear-gradient ქმნის ფერთა ცვლილებას ხაზის მიმართულებით.
+direction შეიძლება იყოს: to right, to bottom, angle (45deg) და ა.შ.
+*/
+
+        .grad1 {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(red, yellow);
+            margin-top: 260px;
+        }
+
+        .grad2 {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(to left, blue, white);
+            margin-top: 20px;
+        }
+
+
+        .btn {
+            padding: 10px 25px;
+            background: linear-gradient(green, lightgreen);
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        /*
+px — პიქსელი
+% — პროცენტი მშობლის მიმართ
+em — დამოკიდებულია ელემენტის font-size-ზე
+rem — html font-size-ზე
+vw — viewport width 1%
+vh — viewport height 1%
+vmin/vmax — viewport-ის მინ/მაქს %
+cm/mm/in — ფიზიკური ზომები
+pt/pc — ბეჭდვის ზომები
+ch/ex — შრიფტის სიმბოლოებზე დაფუძნებული ზომები
+auto — ბრაუზერი წყვეტს ზომას
+*/
+        .half {
+            width: 50%;
+            height: 80px;
+            background: lightblue;
+            margin-top: 20px;
+        }
+
+        .bigtext {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        /*
+Media Query — საშუალებას გვაძლევს სტილები ეკრანის ზომის მიხედვით შევცვალოთ.
+*/
+        .colorbox {
+            width: 150px;
+            height: 150px;
+            background: green;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 500px) {
+            .colorbox {
+                background: red;
+            }
+        }
+
+        .responsive-title {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .responsive-title {
+                text-align: center;
+            }
+        }
+
+        .resp-img {
+            width: 400px;
+        }
+
+        @media (max-width: 600px) {
+            .resp-img {
+                width: 200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Homework 2 Results</h1>
+
+    <!-- 2) overlapping boxes -->
+    <div class="box blue"></div>
+    <div class="box red"></div>
+
+    <!-- 3) overlapping images (example images required) -->
+    <div class="imgs">
+        <img src="img1.jpg" class="i1">
+        <img src="img2.jpg" class="i2">
+        <img src="img3.jpg" class="i3">
+    </div>
+
+    <!-- 5) gradients -->
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+
+    <button class="btn">Click me</button>
+
+    <div class="half"></div>
+
+    <div class="bigtext">2rem Text Example</div>
+
+    <div class="colorbox"></div>
+
+    <h1 class="responsive-title">Responsive Title</h1>
+
+    <img src="img1.jpg" class="resp-img">
+
+</body>
+
+</html>

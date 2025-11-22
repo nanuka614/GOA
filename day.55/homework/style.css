@@ -1,0 +1,109 @@
+/* 
+    1) ახსნა: display: grid;
+*/
+/*
+display: grid არის CSS-ის განლაგების სისტემა,
+რომელიც საშუალებას გაძლევს შექმნა რიგები (rows) და სვეტები (columns).
+Grid გაძლევს ძალიან ზუსტ კონტროლს: 
+— სვეტების რაოდენობა,
+— რიგების რაოდენობა,
+— ელემენტების გაჭიმვა, გაერთიანება (span),
+— gap სვეტებს და რიგებს შორის.
+
+Grid ჩვეულებრივ გამოიყენება კომპლექსური ლეიაუთებისთვის.
+*/
+
+/*
+    2) 3 სვეტი, 3 რიგი, 9 ყუთი
+*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 სვეტი */
+    grid-template-rows: repeat(3, 120px);
+    /* 3 რიგი */
+    gap: 10px;
+    /* სივრცე ყუთებს შორის */
+    margin-bottom: 50px;
+}
+
+.container div {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+    3) 4-column grid + span
+*/
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.grid4 div {
+    height: 100px;
+    background: #7cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* span examples */
+.big1 {
+    grid-column: span 2;
+}
+
+.big2 {
+    grid-column: span 3;
+}
+
+/* 
+    4) 2-column grid, 4 rows, align-items
+*/
+.grid-align {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 სვეტი */
+    grid-template-rows: repeat(4, 120px);
+    align-items: center;
+    /* ვერტიკალური გასწორება */
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.grid-align div {
+    background: #e69138;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+/* პირველი ყუთი მაღალი */
+.grid-align .tall {
+    height: 200px;
+    background: #cc0000;
+}
+
+/* 
+    5) 2-column grid + justify-items
+*/
+.grid-justify {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    /* ჰორიზონტალური გასწორება */
+    gap: 10px;
+}
+
+.grid-justify div {
+    background: #6fa8dc;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+}

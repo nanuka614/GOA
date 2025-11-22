@@ -1,0 +1,127 @@
+/* 
+    1) align-items — ვერტიკალური გასწორება
+*/
+.grid-align-items {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    height: 200px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.grid-align-items div {
+    background: #6fa8dc;
+    margin: 5px;
+    padding: 10px;
+    height: 40px;
+}
+
+.tall {
+    height: 90px;
+}
+
+/* align-items variations */
+.ai-start { align-items: start; }
+.ai-center { align-items: center; }
+.ai-end { align-items: end; }
+
+
+
+/* 
+    2) justify-items — ჰორიზონტალური გასწორება
+*/
+.grid-justify-items {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    height: 150px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.grid-justify-items div {
+    background: #f6b26b;
+    padding: 10px;
+    margin: 5px;
+    width: 60px;
+}
+
+.ji-start { justify-items: start; }
+.ji-center { justify-items: center; }
+.ji-end { justify-items: end; }
+.ji-stretch { justify-items: stretch; }
+
+
+
+/*
+    3) gap, row-gap, column-gap
+*/
+.grid-gaps {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 80px);
+    border: 2px solid black;
+
+    /* Main gap */
+    gap: 15px;
+
+    /* optional:
+    row-gap: 20px;
+    column-gap: 30px;
+    */
+
+    margin-bottom: 40px;
+}
+
+.grid-gaps div {
+    background: #93c47d;
+    padding: 10px;
+}
+
+
+
+/*
+    4) align-content / justify-content
+    იმოქმედებს — მთელ ყუთების ჯგუფზე
+*/
+.big-container {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(2, 50px);
+
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.big-container div {
+    background: #d5a6bd;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* variations */
+.ac-start {
+    align-content: start;
+    justify-content: start;
+}
+
+.ac-center {
+    align-content: center;
+    justify-content: center;
+}
+
+.ac-end {
+    align-content: end;
+    justify-content: end;
+}
+
+.ac-space-between {
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.ac-space-around {
+    align-content: space-around;
+    justify-content: space-around;
+}

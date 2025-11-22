@@ -1,0 +1,93 @@
+F<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Homework 1</title>
+
+<style>
+/*
+px — პიქსელი, ფიქსირებული ზომა.
+cm/mm/in — ფიზიკური ზომები (ბეჭდვისთვის).
+pt/pc — ბეჭდვის ზომები (1pt = 1/72in, 1pc = 12pt).
+% — პროცენტი მშობელ ელემენტთან შედარებით.
+em — დამოკიდებულია ელემენტის font-size-ზე.
+rem — დამოკიდებულია html-ის font-size-ზე.
+vw — viewport width-ის 1%.
+vh — viewport height-ის 1%.
+vmin — viewport-ის მინიმალური %.
+vmax — viewport-ის მაქსიმალური %.
+ch — “0” სიმბოლოს სიგანის ერთეული.
+ex — x-height-ის ერთეული.
+auto — ბრაუზერი თვითონ წყვეტს ზომას.
+*/
+
+
+.box {
+width: 100px;
+height: 100px;
+position: absolute;
+opacity: 0.9;
+}
+
+.left  { 
+    background: red;   left: 20px; top: 20px; z-index: 1; 
+}
+.right { 
+    background: green; left: 60px; top: 20px; z-index: 2; 
+}
+.middle{ 
+    background: blue;  left: 40px; top: 40px; z-index: 3; 
+}
+
+
+.container {
+width: 100%;
+border: 2px solid black;
+margin-top: 160px;
+}
+.block {
+width: 80%;
+min-width: 300px;
+height: 50vh;
+background: lightblue;
+}
+
+
+.bar {
+width: 600px;
+height: 80px;
+margin-top: 20px;
+background: linear-gradient(to right, red 0%, yellow 60%);
+}
+
+
+.gradient-box {
+height: 200px;
+background: linear-gradient(blue, white);
+margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Homework 1 Results</h1>
+
+<!-- 2) Overlapping squares -->
+<div class="box left"></div>
+<div class="box right"></div>
+<div class="box middle"></div>
+
+<!-- 3) Block size -->
+<div class="container">
+<div class="block"></div>
+</div>
+
+<!-- 4) Gradient bar -->
+<div class="bar"></div>
+
+<!-- 5) Blue to white gradient -->
+<div class="gradient-box"></div>
+
+</body>
+</html>
