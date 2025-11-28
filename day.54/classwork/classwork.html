@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classwork</title>
+</head>
+<body>
+
+    <h1>Switch Statements</h1>
+
+    <!-- MONTH CHECKER -->
+    <h2>1</h2>
+    <input id="monthInput" type="number" placeholder="შეიყვანე რიცხვი 1–12">
+    <button onclick="checkMonth()">შეამოწმე</button>
+    <div id="monthResult" class="result"></div>
+
+    <hr>
+
+    <!-- GRADE CHECKER -->
+    <h2>2</h2>
+    <input id="gradeInput" type="text" maxlength="1" placeholder="შეიყვანე ასო (A–F)">
+    <button onclick="checkGrade()">შეამოწმე</button>
+    <div id="gradeResult" class="result"></div>
+
+    <script>
+
+        function checkMonth() {
+            let month = Number(document.getElementById("monthInput").value);
+            let result;
+
+            switch (month) {
+                case 1: result = "January"; break;
+                case 2: result = "February"; break;
+                case 3: result = "March"; break;
+                case 4: result = "April"; break;
+                case 5: result = "May"; break;
+                case 6: result = "June"; break;
+                case 7: result = "July"; break;
+                case 8: result = "August"; break;
+                case 9: result = "September"; break;
+                case 10: result = "October"; break;
+                case 11: result = "November"; break;
+                case 12: result = "December"; break;
+                default:
+                    result = "Invalid month";
+            }
+
+            document.getElementById("monthResult").textContent = result;
+        }
+
+
+        function checkGrade() {
+            let grade = document.getElementById("gradeInput").value.toUpperCase();
+            let result;
+
+            switch (grade) {
+                case "A": result = "Excellent!"; break;
+                case "B": result = "Good"; break;
+                case "C": result = "Average"; break;
+                case "D": result = "Poor"; break;
+                case "F": result = "Fail"; break;
+                default:
+                    result = "Invalid grade";
+            }
+
+            document.getElementById("gradeResult").textContent = result;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+
+.hover-btn {
+    padding: 12px 25px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hover-btn:hover { background: red; }
+
+.flip-div {
+    width: 150px;
+    height: 100px;
+    background: #8e44ad;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: transform 0.5s, border-radius 0.5s;
+}
+.flip-div:hover {
+    transform: rotateY(180deg) scale(1.2);
+    border-radius: 20px;
+}
+
+.animate-div {
+    width: 150px;
+    height: 100px;
+    background: #e67e22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: transform 0.5s;
+}
+.animate-div:hover {
+    transform: scale(3);
+    animation: scaleAnim 0.5s forwards;
+}
+@keyframes scaleAnim {
+    0% { transform: scale(0); }
+    50% { transform: scale(2); }
+    100% { transform: scale(3); }
+}
+
+.grow-shrink-btn {
+    padding: 12px 25px;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.grow-shrink-btn:hover { transform: scale(2); }
+.grow-shrink-btn:active { transform: scale(0.5); transition: transform 0.5s; }
+
+.rotate-div {
+    width: 150px;
+    height: 100px;
+    background: #f39c12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: transform 0.2s;
+}
+.rotate-div:active { transform: rotate(10deg); }
+
+.darken-btn {
+    padding: 12px 25px;
+    background: #34495e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.darken-btn:active {
+    background: #2c3e50;
+    transform: translateY(2px);
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    transition: background 0.3s, outline 0.3s;
+}
+textarea:focus {
+    background: #f0f8ff;
+    outline: 2px solid #3498db;
+}
+
+input[type="email"]:valid { border: 2px solid #4CAF50; }
+input[type="email"]:invalid { border: 2px solid #e74c3c; }
+
+input[type="password"]:valid { background-color: #d4edda; }
+input[type="password"]:invalid { background-color: #f8d7da; }
+
+section { display: none; padding: 10px; margin: 10px 0; background: #bdc3c7; }
+section:target { display: block; }
