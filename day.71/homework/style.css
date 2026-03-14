@@ -1,0 +1,150 @@
+#p1{
+    font-weight:lighter;
+}
+#p2{
+    font-weight:normal;
+}
+#p3{
+    font-weight:bold;
+}
+#p4{
+    font-weight:bolder;
+}
+#p5{
+    font-weight:inherit;
+}
+
+
+#h100{
+    font-weight:100;
+}
+#h200{
+    font-weight:200;
+}
+#h300{
+    font-weight:300;
+}
+#h400{
+    font-weight:400;
+}
+#h500{
+    font-weight:500;
+}
+#h600{
+    font-weight:600;
+}
+#h700{
+    font-weight:700;
+}
+#h800{
+    font-weight:800;
+}
+#h900{
+    font-weight:900;
+}
+
+
+/* სიები */
+#htmltags{
+font-weight:lighter;
+}
+
+#csstags{
+font-weight:bolder;
+}
+
+/*  inheritance */
+#names{
+font-weight:500;
+}
+
+#surnames{
+font-weight:bold;
+}
+
+/* table */
+#table1{
+font-weight:900;
+color:rgb(0,255,0);
+font-size:24px;
+}
+
+/*  table */
+#table2{
+font-weight:bold;
+color:rgb(255,105,180);
+font-size:30px;
+}
+
+#table2 td{
+background-color:blue;
+border:2px solid rgb(255,255,0);
+}
+
+/* div styles:) */
+#div1{
+color:red;
+background-color:lightgray;
+text-align:center;
+border:2px solid black;
+text-shadow:2px 2px 5px gray;
+}
+
+#div2{
+color:purple;
+}
+
+#div2 h3{
+text-decoration:underline;
+text-transform:uppercase;
+}
+
+.box{
+text-align:center;
+}
+
+.btn{
+background-color:orange;
+border:2px solid black;
+font-size:20px;
+font-weight:bold;
+}
+
+/*
+8) font-weight განმარტება
+
+font-weight გამოიყენება ტექსტის სისქის შესაცვლელად.
+
+მნიშვნელობები:
+lighter
+normal
+bold
+bolder
+
+რიცხვითი მნიშვნელობები:
+100
+200
+300
+400
+500
+600
+700
+800
+900
+
+მაგალითი:
+p{
+font-weight:bold;
+}
+*/
+
+/*
+10) font-family განმარტება
+
+font-family განსაზღვრავს ტექსტის შრიფტს.
+
+მაგალითები:
+font-family: Arial;
+font-family: "Times New Roman";
+font-family: Verdana, sans-serif;
+*/

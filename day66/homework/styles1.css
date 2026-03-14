@@ -1,0 +1,60 @@
+.class1 {
+    color: rgb(58, 42, 42);
+    background-color: rgb(219, 233, 246);
+    width: 350px;
+    border: 5px solid #1B4F72;
+    text-align: center;
+}
+
+#unique1 {
+    color:#68b198;
+    background-color: #9fb6cb;
+}
+
+.class2 {
+    color: #ffffff;
+    background-color: #9859b3;
+    font-size: 18px;
+    padding: 15px;
+    border: 3px dashed #351244;
+    text-align: center;
+}
+
+
+#unique2{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 200, 0);
+    font-size: 24px;
+    padding: 25px;
+    border: 4px solid rgb(255, 0, 0);
+    text-align: right;
+}
+
+
+#class3{
+    background-color: #a027ae;
+    border: 4px solid #320033;
+    padding:25px;
+}
+
+
+#class4{
+    color: rgb(255,255,255);
+    font-size: 20px;
+    background-color: #1ABC9C;
+    padding: 10px;
+}
+
+
+
+.secClass {
+    background-color: #D5F5E3;
+    padding: 40px;
+    border: 5px solid #1D8348;
+}
+
+#secID {
+    background-color: rgb(200,200,200);
+    margin: 30px;
+    border: 4px dashed rgb(100,100,100);
+}
